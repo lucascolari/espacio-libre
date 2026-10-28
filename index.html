@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espacio Libre — Indumentaria deportiva femenina</title>
+  <meta name="description" content="Indumentaria deportiva femenina para entrenar, salir y disfrutar del movimiento. Conjuntos, calzas y tops. A tu ritmo, en tu espacio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='21' fill='%237A2EB0'/%3E%3Ccircle cx='27' cy='12' r='3' fill='white'/%3E%3C/svg%3E">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__frame">
+          <img src="img/hero.jpg" alt="Mujeres entrenando con indumentaria deportiva">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Deportiva femenina</p>
+            <h1>A tu ritmo.<span class="serif">En libertad.</span></h1>
+            <p class="hero__text">Para entrenar, salir y disfrutar de estar en movimiento. A tu ritmo, en tu espacio.</p>
+            <a class="btn btn--light" href="tienda.html">Explorar la tienda
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+            <p class="hero__note">Deportiva femenina · Espacio Libre</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="perks">
+      <div class="container">
+        <div class="perks__grid">
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13l-7 7-9-9V4h7l9 9z"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor" stroke="none"/></svg> Elegí tu talle</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-5A8 8 0 1 1 21 12z"/></svg> Asesoramiento por WhatsApp</div>
+          <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg> Elegí y comprá online</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__left">
+            <h2 class="section-title">Prendas para <span class="serif">seguir tu movimiento.</span></h2>
+            <p>Una selección deportiva para encontrar tu próxima combinación.</p>
+          </div>
+          <a class="arrow-link" href="tienda.html">Ver toda la tienda
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="shop-controls">
+          <div class="filter-tabs" id="homeTabs">
+            <button class="tab is-active" data-filter="todas">Todas</button>
+            <button class="tab" data-filter="conjuntos">Conjuntos</button>
+            <button class="tab" data-filter="tops">Tops</button>
+            <button class="tab" data-filter="calzas">Calzas</button>
+          </div>
+          <div class="sort">
+            <label for="homeSort">Ordenar</label>
+            <select id="homeSort">
+              <option value="destacados">Destacados</option>
+              <option value="menor">Precio: menor a mayor</option>
+              <option value="mayor">Precio: mayor a menor</option>
+              <option value="nombre">Nombre (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

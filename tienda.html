@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda — Espacio Libre</title>
+  <meta name="description" content="Toda la indumentaria deportiva femenina de Espacio Libre: conjuntos, calzas y tops.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='21' fill='%237A2EB0'/%3E%3Ccircle cx='27' cy='12' r='3' fill='white'/%3E%3C/svg%3E">
+</head>
+<body data-page="tienda">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>La tienda <span class="serif">en movimiento.</span></h1>
+        <p>Conjuntos, calzas y tops para entrenar y para tu día a día. Elegí tu talle y combiná a tu ritmo.</p>
+        <p id="shopQueryInfo" hidden style="margin-top:12px;color:var(--violet-700)">Resultados para: “<b></b>”</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="shop-controls">
+          <div class="filter-tabs" id="shopTabs">
+            <button class="tab is-active" data-filter="todas">Todas</button>
+            <button class="tab" data-filter="conjuntos">Conjuntos</button>
+            <button class="tab" data-filter="tops">Tops</button>
+            <button class="tab" data-filter="calzas">Calzas</button>
+          </div>
+          <div class="sort">
+            <span id="shopCount" style="margin-right:8px"></span>
+            <label for="shopSort">Ordenar</label>
+            <select id="shopSort">
+              <option value="destacados">Destacados</option>
+              <option value="menor">Precio: menor a mayor</option>
+              <option value="mayor">Precio: mayor a menor</option>
+              <option value="nombre">Nombre (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="shopGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
