@@ -86,7 +86,17 @@ p{margin:0}
 .site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
 .brand{display:flex;align-items:center;gap:11px}
-.logo-mark{width:42px;height:42px;flex:none}
+/* Marca: figura del logo recortada del PNG oficial (img/logo.png) */
+.el-mark{
+  display:inline-block;flex:none;
+  width:calc(var(--s,44px) * 1.234);height:var(--s,44px);
+  background-image:url("../img/logo.png");
+  background-repeat:no-repeat;
+  background-color:#fff;
+  background-size:calc(var(--s,44px) * 1.994);
+  background-position:calc(var(--s,44px) * -0.40625) calc(var(--s,44px) * -0.3281);
+}
+.el-mark--badge{border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.14)}
 .brand__text{display:flex;flex-direction:column;line-height:1}
 .brand__name{font-weight:600;font-size:1.12rem;letter-spacing:-.01em}
 .brand__sub{font-size:.58rem;letter-spacing:.34em;color:var(--muted);margin-top:3px;text-transform:uppercase}

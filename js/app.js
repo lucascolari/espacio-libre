@@ -86,7 +86,7 @@
       <header class="site-header">
         <div class="container header-inner">
           <a class="brand" href="index.html" aria-label="Espacio Libre — inicio">
-            ${LOGO}
+            <span class="el-mark" style="--s:46px" role="img" aria-label="Espacio Libre"></span>
             <span class="brand__text">
               <span class="brand__name">espacio libre</span>
               <span class="brand__sub">Indumentaria</span>
@@ -116,7 +116,7 @@
         <div class="container footer-grid">
           <div class="footer-brand">
             <div class="brand">
-              ${FOOTER_LOGO}
+              <span class="el-mark el-mark--badge" style="--s:46px"></span>
               <span class="brand__text"><span class="brand__name">Espacio Libre</span></span>
             </div>
             <p>Indumentaria para acompañar tu movimiento y todos tus días.</p>
@@ -501,6 +501,8 @@
     const f = document.getElementById("site-footer");
     if (h) h.innerHTML = buildHeader();
     if (f) f.innerHTML = buildFooter();
+    const fav = document.querySelector('link[rel="icon"]');
+    if (fav) fav.href = "img/logo.png";
     updateBadge();
     wireGlobal();
 
