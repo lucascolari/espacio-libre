@@ -82,7 +82,6 @@
     const links = nav.map(n => `<a href="${n.href}" class="${n.match(page) ? "is-active" : ""}">${n.label}</a>`).join("");
 
     return `
-      <div class="topbar">Indumentaria deportiva femenina</div>
       <header class="site-header">
         <div class="container header-inner">
           <a class="brand" href="index.html" aria-label="Espacio Libre — inicio">
