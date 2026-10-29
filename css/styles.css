@@ -143,6 +143,15 @@ p{margin:0}
 .hero__word--right{color:var(--violet);font-weight:700}
 .hero__sub{text-align:center;color:var(--ink-soft);margin:clamp(10px,2vw,22px) auto 0;max-width:none;white-space:nowrap;font-size:1.02rem}
 
+/* En escritorio: que todo el inicio entre en una sola pantalla (mismo diseño, solo escalado) */
+@media(min-width:761px){
+  .hero{min-height:100svh;display:flex;align-items:center}
+  .hero__inner{width:100%}
+  .hero__media{width:fit-content;max-width:100%}
+  .hero__media img{width:auto;max-width:100%;max-height:46vh}
+  .hero__headline{font-size:min(10vw,14vh)}
+}
+
 /* ---------- Franja de beneficios ---------- */
 .perks{background:var(--lav-100)}
 .perks__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:26px 0}
