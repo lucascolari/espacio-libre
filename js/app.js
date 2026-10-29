@@ -115,8 +115,11 @@
         <div class="container footer-grid">
           <div class="footer-brand">
             <div class="brand">
-              <span class="el-mark el-mark--badge" style="--s:46px"></span>
-              <span class="brand__text"><span class="brand__name">Espacio Libre</span></span>
+              <span class="el-mark" style="--s:44px"></span>
+              <span class="brand__text">
+                <span class="brand__name">espacio libre</span>
+                <span class="brand__sub">Indumentaria</span>
+              </span>
             </div>
             <p>Indumentaria para acompañar tu movimiento y todos tus días.</p>
           </div>

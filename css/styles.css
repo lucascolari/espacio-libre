@@ -319,13 +319,14 @@ p{margin:0}
 
 /* ---------- Footer ---------- */
 .site-footer{background:linear-gradient(120deg,var(--violet-700),var(--violet) 55%,var(--violet-600));color:#fff;margin-top:auto}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding:60px 0 40px}
-.footer-brand .brand__name{color:#fff}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-top:60px;padding-bottom:40px}
+.footer-brand .brand{display:inline-flex;width:auto}
+.footer-brand .brand__name{color:var(--ink)}
 .footer-brand p{color:rgba(255,255,255,.82);margin-top:16px;max-width:300px;font-size:.92rem}
 .footer-col h4{font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px;color:rgba(255,255,255,.95)}
 .footer-col a{display:block;color:rgba(255,255,255,.8);font-size:.92rem;margin-bottom:12px;transition:.2s}
 .footer-col a:hover{color:#fff;padding-left:4px}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.18);padding:20px 0;text-align:center;font-size:.76rem;color:rgba(255,255,255,.72)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.18);padding:20px clamp(16px,4vw,40px);text-align:center;font-size:.76rem;color:rgba(255,255,255,.72)}
 .footer-logo-mark circle{fill:rgba(255,255,255,.18)}
 .footer-logo-mark path,.footer-logo-mark .head{fill:#fff;stroke:#fff}
 
