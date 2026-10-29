@@ -466,7 +466,7 @@
             <div class="summary__row"><span>Subtotal</span><span>${formatPrice(total)}</span></div>
             <div class="summary__row"><span>Envío</span><span>${freeLeft <= 0 ? "Sin cargo" : "A coordinar"}</span></div>
             <div class="summary__row summary__row--total"><span>Total</span><span>${formatPrice(total)}</span></div>
-            ${freeLeft > 0 ? `<p class="summary__note">Te faltan ${formatPrice(freeLeft)} para acceder a envío sin cargo.</p>` : `<p class="summary__note">¡Tu compra tiene envío sin cargo! 🎉</p>`}
+            ${freeLeft > 0 ? `<p class="summary__note">Te faltan ${formatPrice(freeLeft)} para acceder a envío sin cargo.</p>` : `<p class="summary__note">Tu compra tiene envío sin cargo.</p>`}
             <button class="btn btn--primary btn--wide" id="checkout" style="margin-top:18px">${ICON.wa} Finalizar por WhatsApp</button>
             <p class="summary__note">Demostración: la compra se coordina por WhatsApp. Sin pagos reales en este sitio.</p>
           </aside>

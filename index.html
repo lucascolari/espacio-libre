@@ -15,21 +15,30 @@
   <div id="site-header"></div>
 
   <main>
-    <!-- HERO -->
+    <!-- HERO editorial -->
     <section class="hero">
-      <div class="container">
-        <div class="hero__frame">
-          <img src="img/hero.jpg" alt="Mujeres entrenando con indumentaria deportiva">
-          <div class="hero__content">
-            <p class="hero__eyebrow">Deportiva femenina</p>
-            <h1>A tu ritmo.<span class="serif">En libertad.</span></h1>
-            <p class="hero__text">Para entrenar, salir y disfrutar de estar en movimiento. A tu ritmo, en tu espacio.</p>
-            <a class="btn btn--light" href="tienda.html">Explorar la tienda
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      <div class="petals" aria-hidden="true">
+        <span class="petal" style="--x:6%;--s:16px;--d:20s;--delay:-3s;--sway:34px"></span>
+        <span class="petal" style="--x:14%;--s:11px;--d:26s;--delay:-12s;--sway:-28px"></span>
+        <span class="petal" style="--x:24%;--s:20px;--d:23s;--delay:-7s;--sway:40px"></span>
+        <span class="petal" style="--x:38%;--s:13px;--d:29s;--delay:-16s;--sway:-34px"></span>
+        <span class="petal" style="--x:62%;--s:17px;--d:22s;--delay:-5s;--sway:30px"></span>
+        <span class="petal" style="--x:74%;--s:12px;--d:27s;--delay:-14s;--sway:-26px"></span>
+        <span class="petal" style="--x:84%;--s:19px;--d:24s;--delay:-9s;--sway:36px"></span>
+        <span class="petal" style="--x:93%;--s:14px;--d:30s;--delay:-19s;--sway:-30px"></span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__display">
+          <span class="hero__word hero__word--left">A tu ritmo</span>
+          <div class="hero__media">
+            <img src="img/hero-run.jpg" alt="Mujer corriendo en el parque con indumentaria deportiva">
+            <a class="btn btn--light hero__cta" href="tienda.html">Explorar la tienda
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <p class="hero__note">Deportiva femenina · Espacio Libre</p>
           </div>
+          <span class="hero__word hero__word--right serif">En libertad</span>
         </div>
+        <p class="hero__sub">Para entrenar, salir y disfrutar de estar en movimiento. A tu ritmo, en tu espacio.</p>
       </div>
     </section>
 
@@ -45,11 +54,11 @@
     </section>
 
     <!-- PRODUCTOS -->
-    <section class="section section--soft">
+    <section class="section">
       <div class="container">
         <div class="section-head">
           <div class="section-head__left">
-            <h2 class="section-title">Prendas para <span class="serif">seguir tu movimiento.</span></h2>
+            <h2 class="section-title">Prendas para <span class="serif">moverte.</span></h2>
             <p>Una selección deportiva para encontrar tu próxima combinación.</p>
           </div>
           <a class="arrow-link" href="tienda.html">Ver toda la tienda
@@ -76,6 +85,88 @@
         </div>
 
         <div class="product-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="section cats">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Tu próximo movimiento</p>
+        <h2 class="section-title center">Elegí cómo <span class="serif">acompañarlo.</span></h2>
+        <div class="cat-grid">
+          <a class="cat-card" href="tienda.html?cat=conjuntos">
+            <img src="img/conjunto-deportivo.jpg" alt="Conjuntos deportivos">
+            <span class="cat-card__label">Conjuntos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+          <a class="cat-card cat-card--low" href="tienda.html?cat=calzas">
+            <img src="img/conjunto-rosa.jpg" alt="Calzas deportivas">
+            <span class="cat-card__label">Calzas
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+          <a class="cat-card" href="tienda.html?cat=tops">
+            <img src="img/top-deportivo.jpg" alt="Tops deportivos">
+            <span class="cat-card__label">Tops
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="section editorial">
+      <div class="container editorial__grid">
+        <figure class="editorial__media">
+          <img src="img/editorial-run.jpg" alt="Mujer corriendo en un sendero al aire libre">
+          <figcaption class="serif">Tu tiempo. Tu espacio.</figcaption>
+        </figure>
+        <div class="editorial__text">
+          <p class="eyebrow">Deportiva, a tu manera</p>
+          <h2 class="section-title">No hay una sola forma de<br><span class="serif">estar en movimiento.</span></h2>
+          <p class="editorial__p">Una caminata, tu entrenamiento o ese momento que elegís para vos. Encontrá prendas para acompañarte.</p>
+          <a class="btn btn--primary" href="tienda.html">Encontrá tu conjunto
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <p class="muted-note">Fotografía de ambientación. Las prendas de la imagen son ilustrativas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="petals petals--soft" aria-hidden="true">
+        <span class="petal" style="--x:10%;--s:15px;--d:24s;--delay:-6s;--sway:30px"></span>
+        <span class="petal" style="--x:28%;--s:11px;--d:28s;--delay:-15s;--sway:-26px"></span>
+        <span class="petal" style="--x:48%;--s:18px;--d:23s;--delay:-9s;--sway:36px"></span>
+        <span class="petal" style="--x:68%;--s:12px;--d:30s;--delay:-18s;--sway:-30px"></span>
+        <span class="petal" style="--x:88%;--s:16px;--d:26s;--delay:-4s;--sway:28px"></span>
+      </div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Cerca, en cada elección</p>
+        <h2 class="section-title center">Comprá a tu ritmo.<br><span class="serif">Te acompañamos.</span></h2>
+        <div class="cta-grid">
+          <a class="cta-card" href="talles.html">
+            <span class="cta-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13l-7 7-9-9V4h7l9 9z"/><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor" stroke="none"/></svg></span>
+            <span class="cta-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <h3>Encontrá tu talle</h3>
+            <p>Consultanos antes de elegir.</p>
+          </a>
+          <a class="cta-card" href="envios.html">
+            <span class="cta-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg></span>
+            <span class="cta-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <h3>Envíos y retiros</h3>
+            <p>Conocé las opciones de entrega.</p>
+          </a>
+          <a class="cta-card" href="contacto.html">
+            <span class="cta-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-5A8 8 0 1 1 21 12z"/></svg></span>
+            <span class="cta-card__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+            <h3>Hablemos</h3>
+            <p>Estamos para ayudarte.</p>
+          </a>
+        </div>
       </div>
     </section>
   </main>
