@@ -129,32 +129,17 @@ p{margin:0}
 .search-bar input:focus{outline:2px solid var(--lav-300)}
 
 /* ---------- Hero editorial ---------- */
-.hero{position:relative;overflow:hidden;padding:clamp(22px,4vw,54px) 0 clamp(28px,5vw,58px);background:radial-gradient(130% 80% at 50% -5%,var(--lav-100) 0%,var(--lav-50) 34%,#fff 62%)}
+.hero{position:relative;overflow:hidden;padding:clamp(24px,4vw,56px) 0 clamp(30px,5vw,62px);
+  background:radial-gradient(120% 95% at 50% -12%,#f0e4fb 0%,#f8f2fd 44%,#fffdff 80%)}
 .hero__inner{position:relative;z-index:1}
-.hero__display{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(6px,2.4vw,28px)}
-.hero__word{font-size:clamp(2rem,6.6vw,4.7rem);font-weight:500;line-height:.95;letter-spacing:-.02em;color:var(--ink)}
-.hero__word--left{text-align:right}
-.hero__word--right{text-align:left;color:var(--violet);font-weight:600}
-.hero__media{position:relative;width:clamp(230px,30vw,348px);aspect-ratio:3/4;border-radius:180px 180px 26px 26px;overflow:hidden;box-shadow:var(--shadow-md)}
-.hero__media img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
-.hero__cta{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);white-space:nowrap;box-shadow:0 12px 26px -10px rgba(60,21,96,.6)}
-.hero__sub{text-align:center;color:var(--muted);margin:clamp(22px,4vw,40px) auto 0;max-width:470px;font-size:1rem}
-
-/* pétalos flotantes (movimiento suave de fondo) */
-.petals{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-.petal{position:absolute;top:-8%;left:var(--x);width:var(--s,16px);height:var(--s,16px);
-  background:linear-gradient(135deg,var(--lav-300),var(--violet));
-  border-radius:0 100% 0 100%;opacity:0;will-change:transform,opacity;
-  animation:petalFloat var(--d,22s) linear var(--delay,0s) infinite}
-.petals--soft .petal{background:linear-gradient(135deg,var(--lav-200),var(--lav-300))}
-@keyframes petalFloat{
-  0%{transform:translate3d(0,-10%,0) rotate(0deg);opacity:0}
-  12%{opacity:.5}
-  50%{transform:translate3d(var(--sway,26px),46vh,0) rotate(200deg)}
-  86%{opacity:.42}
-  100%{transform:translate3d(calc(var(--sway,26px) * -1),94vh,0) rotate(400deg);opacity:0}
-}
-@media (prefers-reduced-motion:reduce){.petal{animation:none;opacity:.28}}
+.hero__media{position:relative;max-width:920px;margin:0 auto;aspect-ratio:16/9;border-radius:clamp(26px,4vw,54px);overflow:hidden;box-shadow:0 30px 70px -34px rgba(60,21,96,.45)}
+.hero__media img{width:100%;height:100%;object-fit:cover;object-position:center 34%}
+.hero__cta{position:absolute;top:50%;right:clamp(12px,2.6vw,28px);transform:translateY(-50%);white-space:nowrap;box-shadow:0 14px 30px -10px rgba(60,21,96,.55)}
+.hero__headline{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:.06em .34em;
+  margin:clamp(16px,2.8vw,32px) 0 0;font-size:clamp(2.4rem,8.4vw,6rem);font-weight:500;line-height:1;letter-spacing:-.02em;text-align:center}
+.hero__word--left{color:var(--ink)}
+.hero__word--right{color:var(--violet);font-weight:600}
+.hero__sub{text-align:center;color:var(--muted);margin:clamp(16px,2.6vw,26px) auto 0;max-width:500px;font-size:1.02rem}
 
 /* ---------- Franja de beneficios ---------- */
 .perks{background:var(--lav-100)}
@@ -389,10 +374,9 @@ p{margin:0}
   .perks__grid{grid-template-columns:1fr;gap:14px}
   .perk{justify-content:flex-start}
   .hero{padding-top:14px}
-  .hero__display{grid-template-columns:1fr;justify-items:center;text-align:center;gap:2px}
-  .hero__word{font-size:clamp(2rem,9vw,3.4rem);line-height:1.02;max-width:100%}
-  .hero__word--left,.hero__word--right{text-align:center}
-  .hero__media{order:-1;width:min(78%,300px);margin-bottom:18px;border-radius:150px 150px 22px 22px}
+  .hero__media{aspect-ratio:4/3;border-radius:clamp(22px,6vw,34px)}
+  .hero__cta{top:auto;bottom:12px;right:12px;transform:none;padding:.72em 1.2em;font-size:.86rem}
+  .hero__headline{font-size:clamp(2.3rem,12vw,3.5rem);gap:.06em .28em;margin-top:18px}
   .hero__sub{font-size:.96rem}
   .cat-grid{grid-template-columns:1fr 1fr;gap:12px}
   .cat-card{aspect-ratio:4/5}
@@ -409,7 +393,7 @@ p{margin:0}
 @media (max-width:460px){
   .product-grid{grid-template-columns:1fr 1fr;gap:12px}
   .card__name{font-size:.92rem}
-  .hero__word{font-size:clamp(1.85rem,9vw,2.8rem)}
+  .hero__headline{font-size:clamp(2rem,11vw,2.9rem)}
   .cat-grid{grid-template-columns:1fr;gap:14px}
   .cat-card{aspect-ratio:16/11}
 }
